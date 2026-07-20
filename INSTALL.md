@@ -28,8 +28,7 @@ In Codex, type `$i-have-adhd` to request the output style explicitly.
 ### Antigravity (`agy`)
 
 ```bash
-git clone https://github.com/ayghri/i-have-adhd ./i-have-adhd
-agy plugin install ./i-have-adhd
+agy plugin install https://github.com/ayghri/i-have-adhd
 ```
 
 In Antigravity, type `/skills` to verify that `i-have-adhd` is loaded. The skill is automatically loaded and applied based on prompt context.
@@ -84,7 +83,7 @@ codex plugin add i-have-adhd@i-have-adhd
 
 ```bash
 agy plugin uninstall i-have-adhd
-agy plugin install /path/to/local/plugin
+agy plugin install https://github.com/ayghri/i-have-adhd
 ```
 
 ## Uninstall

@@ -35,8 +35,7 @@ In Codex: use `$i-have-adhd` when you want the output style applied explicitly. 
 ### Antigravity (`agy`)
 
 ```bash
-git clone https://github.com/ayghri/i-have-adhd ./i-have-adhd
-agy plugin install ./i-have-adhd
+agy plugin install https://github.com/ayghri/i-have-adhd
 ```
 
 In Antigravity: type `/skills` to verify that the `i-have-adhd` skill is loaded. The skill is automatically used by the agent when relevant to the task at hand.
