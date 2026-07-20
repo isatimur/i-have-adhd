@@ -32,6 +32,17 @@ codex plugin add i-have-adhd@i-have-adhd
 
 In Codex: use `$i-have-adhd` when you want the output style applied explicitly. The skill can also be invoked implicitly when Codex sees a task that benefits from action-first, ADHD-friendly output.
 
+### Antigravity (`agy`)
+
+```bash
+git clone https://github.com/ayghri/i-have-adhd ./i-have-adhd
+agy plugin install ./i-have-adhd
+```
+
+In Antigravity: type `/skills` to verify that the `i-have-adhd` skill is loaded. The skill is automatically used by the agent when relevant to the task at hand.
+
+To disable: `agy plugin disable i-have-adhd`.
+
 More in [INSTALL.md](./INSTALL.md).
 
 ## What it does

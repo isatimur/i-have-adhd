@@ -25,6 +25,17 @@ codex plugin add i-have-adhd@i-have-adhd
 
 In Codex, type `$i-have-adhd` to request the output style explicitly.
 
+### Antigravity (`agy`)
+
+```bash
+git clone https://github.com/ayghri/i-have-adhd ./i-have-adhd
+agy plugin install ./i-have-adhd
+```
+
+In Antigravity, type `/skills` to verify that `i-have-adhd` is loaded. The skill is automatically loaded and applied based on prompt context.
+
+To disable: `agy plugin disable i-have-adhd`.
+
 ## Verify
 
 ### Claude Code
@@ -42,6 +53,14 @@ codex plugin list
 ```
 
 Look for `i-have-adhd` in the configured `i-have-adhd` marketplace.
+
+### Antigravity (`agy`)
+
+```bash
+agy plugin list
+```
+
+Look for `i-have-adhd` in the list of installed plugins.
 
 ## Update
 
@@ -61,6 +80,13 @@ codex plugin remove i-have-adhd
 codex plugin add i-have-adhd@i-have-adhd
 ```
 
+### Antigravity (`agy`)
+
+```bash
+agy plugin uninstall i-have-adhd
+agy plugin install /path/to/local/plugin
+```
+
 ## Uninstall
 
 ### Claude Code
@@ -77,9 +103,29 @@ codex plugin remove i-have-adhd
 codex plugin marketplace remove i-have-adhd
 ```
 
+### Antigravity (`agy`)
+
+```bash
+agy plugin uninstall i-have-adhd
+```
+
 ## Always-on (optional)
 
-To skip `/i-have-adhd` and apply the rules from message one, add to `~/.claude/CLAUDE.md`:
+To skip invoking the skill and apply the rules from message one:
+
+### Claude Code
+
+Add to `~/.claude/CLAUDE.md`:
+
+```markdown
+## Output style
+
+Always follow the rules in the `i-have-adhd` skill: action-first, numbered steps, no preamble, no closers, state restated each turn.
+```
+
+### Antigravity (`agy`)
+
+Add to `~/.gemini/GEMINI.md`:
 
 ```markdown
 ## Output style
