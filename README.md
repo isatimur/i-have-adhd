@@ -8,6 +8,30 @@
   <a href="LICENSE"><img src="https://img.shields.io/github/license/ayghri/i-have-adhd?style=flat" alt="License"></a>
 </p>
 
+## Languages
+
+This fork adds translated, independently-installable skill variants. Each is a full
+skill (frontmatter + rules), not just a translated doc — install the one matching
+your language.
+
+| Language | Skill |
+|---|---|
+| English (original) | `i-have-adhd` |
+| Русский | `i-have-adhd-ru` |
+| Español | `i-have-adhd-es` |
+| Français | `i-have-adhd-fr` |
+| Deutsch | `i-have-adhd-de` |
+| Português (Brasil) | `i-have-adhd-pt-BR` |
+| 中文（简体） | `i-have-adhd-zh-CN` |
+| 日本語 | `i-have-adhd-ja` |
+| 한국어 | `i-have-adhd-ko` |
+| हिन्दी | `i-have-adhd-hi` |
+| العربية | `i-have-adhd-ar` |
+| Italiano | `i-have-adhd-it` |
+| Türkçe | `i-have-adhd-tr` |
+
+Install a variant the same way as the default (see below), swapping the skill name,
+e.g. `claude plugin install i-have-adhd-ru@i-have-adhd`, then type `/i-have-adhd-ru`.
 
 ## Install
 
