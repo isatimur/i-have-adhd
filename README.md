@@ -30,8 +30,10 @@ your language.
 | Italiano | `i-have-adhd-it` |
 | Türkçe | `i-have-adhd-tr` |
 
-Install a variant the same way as the default (see below), swapping the skill name,
-e.g. `claude plugin install i-have-adhd-ru@i-have-adhd`, then type `/i-have-adhd-ru`.
+There's only one plugin, `i-have-adhd`, and it bundles every language variant. Install
+it once as shown in `## Install` below, then invoke whichever variant you want directly
+by its skill name, e.g. `/i-have-adhd-ru` for Claude Code or `$i-have-adhd-ru` for Codex —
+no separate per-language install step exists.
 
 ## Install
 
