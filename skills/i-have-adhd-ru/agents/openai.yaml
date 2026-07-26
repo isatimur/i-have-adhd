@@ -1,7 +1,7 @@
 interface:
   display_name: "У меня ADHD"
   short_description: "Вывод без трений для читателей с ADHD"
-  default_prompt: "Используйте $i-have-adhd, чтобы сделать этот ответ легким для начала, сканирования и выполнения."
+  default_prompt: "Используйте $i-have-adhd-ru, чтобы сделать этот ответ легким для начала, сканирования и выполнения."
 
 policy:
   allow_implicit_invocation: true
