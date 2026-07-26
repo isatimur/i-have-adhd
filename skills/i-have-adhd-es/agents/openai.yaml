@@ -1,0 +1,7 @@
+interface:
+  display_name: "Tengo TDAH"
+  short_description: "Salida de baja fricción para lectores con TDAH"
+  default_prompt: "Usa $i-have-adhd-es para que esta respuesta sea fácil de empezar, escanear y ejecutar."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "私はADHDです"
+  short_description: "ADHD読者向けの低摩擦な出力"
+  default_prompt: "$i-have-adhd-ja を使って、この応答を着手しやすく、ざっと目を通しやすく、実行しやすいものにしてください。"
+
+policy:
+  allow_implicit_invocation: true

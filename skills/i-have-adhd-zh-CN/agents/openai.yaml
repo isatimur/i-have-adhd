@@ -1,0 +1,7 @@
+interface:
+  display_name: "我有ADHD"
+  short_description: "面向ADHD读者的低摩擦输出"
+  default_prompt: "使用 $i-have-adhd-zh-CN 让这条回复易于开始、浏览和执行。"
+
+policy:
+  allow_implicit_invocation: true

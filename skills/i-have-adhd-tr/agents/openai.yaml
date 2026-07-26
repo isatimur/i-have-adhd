@@ -1,0 +1,7 @@
+interface:
+  display_name: "DEHB'im Var"
+  short_description: "DEHB okuyucuları için düşük sürtünmeli çıktı"
+  default_prompt: "Bu yanıta başlamayı, yanıtı taramayı ve uygulamayı kolaylaştırmak için $i-have-adhd-tr kullan."
+
+policy:
+  allow_implicit_invocation: true

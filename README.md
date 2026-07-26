@@ -8,35 +8,64 @@
   <a href="LICENSE"><img src="https://img.shields.io/github/license/ayghri/i-have-adhd?style=flat" alt="License"></a>
 </p>
 
+## Languages
+
+This fork adds translated, independently-invokable skill variants. Each is a full
+skill (frontmatter + rules), not just a translated doc — invoke the one matching
+your language.
+
+| Language | Skill |
+|---|---|
+| English (original) | `i-have-adhd` |
+| Русский | `i-have-adhd-ru` |
+| Español | `i-have-adhd-es` |
+| Français | `i-have-adhd-fr` |
+| Deutsch | `i-have-adhd-de` |
+| Português (Brasil) | `i-have-adhd-pt-BR` |
+| 中文（简体） | `i-have-adhd-zh-CN` |
+| 日本語 | `i-have-adhd-ja` |
+| 한국어 | `i-have-adhd-ko` |
+| हिन्दी | `i-have-adhd-hi` |
+| العربية | `i-have-adhd-ar` |
+| Italiano | `i-have-adhd-it` |
+| Türkçe | `i-have-adhd-tr` |
+
+There's only one plugin, `i-have-adhd`, and it bundles every language variant. Install
+it once as shown in `## Install` below, then invoke whichever variant you want directly
+by its skill name, e.g. `/i-have-adhd-ru` for Claude Code or `$i-have-adhd-ru` for Codex —
+no separate per-language install step exists.
 
 ## Install
 
-### Claude Code
+<details>
+<summary><strong>Claude Code</strong></summary>
 
 ```bash
-git clone https://github.com/ayghri/i-have-adhd ./i-have-adhd
-claude plugin marketplace add ./i-have-adhd
+claude plugin marketplace add isatimur/i-have-adhd
 claude plugin install i-have-adhd@i-have-adhd
 ```
 
-In Claude Code: `/i-have-adhd`.
+Then type `/i-have-adhd`. No local clone needed — Claude Code fetches the repo and keeps it updated.
 
-To disable: `claude plugin disable i-have-adhd` or use `/plugin disable i-have-adhd` from within CC.
+</details>
 
-### Codex
+<details>
+<summary><strong>Codex</strong></summary>
 
 ```bash
-codex plugin marketplace add ayghri/i-have-adhd --ref main
+codex plugin marketplace add isatimur/i-have-adhd --ref main
 codex plugin add i-have-adhd@i-have-adhd
 ```
 
-In Codex: use `$i-have-adhd` when you want the output style applied explicitly. The skill can also be invoked implicitly when Codex sees a task that benefits from action-first, ADHD-friendly output.
+Then type `$i-have-adhd` to apply the output style explicitly. The skill can also be invoked implicitly when Codex sees a task that benefits from it.
 
-More in [INSTALL.md](./INSTALL.md).
+</details>
+
+Install instructions for other coding agents live in [INSTALL.md](./INSTALL.md).
 
 ## What it does
 
-A Claude Code skill that stops burying the answer. Action first. Steps numbered. No "Hope this helps!"
+A cross-agent skill that stops burying the answer. Answers first. Bounded steps. No "Hope this helps!"
 
 
 ## What changes
@@ -73,20 +102,20 @@ A Claude Code skill that stops burying the answer. Action first. Steps numbered.
 
 10 rules. Full text in [SKILL.md](./skills/i-have-adhd/SKILL.md).
 
-1. Lead with the next action.
-2. Number multi-step tasks.
-3. End with one concrete next step.
-4. Suppress tangents.
-5. Restate state every turn.
-6. Specific time estimates (minutes, not "a bit").
-7. Make wins visible.
-8. Matter-of-fact errors.
-9. Cap lists at 5 items.
-10. No preamble. No recap. No closers.
+1. Lead with the answer or next action.
+2. Turn procedures into bounded steps.
+3. Track substantial work visibly.
+4. Make progress concrete.
+5. Suppress tangents.
+6. Preserve necessary detail.
+7. Use time estimates only when useful.
+8. Report errors matter-of-factly.
+9. Respect the user's output contract.
+10. Remove filler.
 
 ## Tune it
 
-Edit `skills/i-have-adhd/SKILL.md`. Re-invoke `/i-have-adhd`.
+Fork, edit `skills/i-have-adhd/SKILL.md`, install your fork: `claude plugin marketplace add <your-username>/i-have-adhd`. Re-invoke `/i-have-adhd`.
 
 ## Credits
 

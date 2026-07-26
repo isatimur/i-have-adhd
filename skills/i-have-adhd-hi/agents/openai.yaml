@@ -1,0 +1,7 @@
+interface:
+  display_name: "मुझे ADHD है"
+  short_description: "ADHD पाठकों के लिए कम रुकावट वाला आउटपुट"
+  default_prompt: "इस जवाब को शुरू करना, सरसरी तौर पर पढ़ना, और पूरा करना आसान बनाने के लिए $i-have-adhd-hi का इस्तेमाल करें।"
+
+policy:
+  allow_implicit_invocation: true

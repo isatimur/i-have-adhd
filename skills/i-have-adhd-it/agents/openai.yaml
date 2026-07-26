@@ -1,0 +1,7 @@
+interface:
+  display_name: "Ho l'ADHD"
+  short_description: "Output a basso attrito per lettori con ADHD"
+  default_prompt: "Usa $i-have-adhd-it per rendere questa risposta facile da iniziare, da scorrere e da eseguire."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Ich habe ADHS"
+  short_description: "Reibungsarme Ausgabe für Leser mit ADHS"
+  default_prompt: "$i-have-adhd-de verwenden, damit diese Antwort leicht zu beginnen, zu überfliegen und auszuführen ist."
+
+policy:
+  allow_implicit_invocation: true
