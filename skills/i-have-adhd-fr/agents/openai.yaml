@@ -1,0 +1,7 @@
+interface:
+  display_name: "J'ai un TDAH"
+  short_description: "Sortie à faible friction pour les lecteurs avec un TDAH"
+  default_prompt: "Utilisez $i-have-adhd-fr pour que cette réponse soit facile à commencer, à parcourir et à exécuter."
+
+policy:
+  allow_implicit_invocation: true
