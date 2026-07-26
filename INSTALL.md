@@ -7,7 +7,7 @@ One skill. Installable in Claude Code, Codex, and Cursor.
 ### Claude Code
 
 ```bash
-claude plugin marketplace add ayghri/i-have-adhd
+claude plugin marketplace add isatimur/i-have-adhd
 claude plugin install i-have-adhd@i-have-adhd
 ```
 
@@ -20,7 +20,7 @@ To disable: `claude plugin disable i-have-adhd` (or `/plugin disable i-have-adhd
 ### Codex
 
 ```bash
-codex plugin marketplace add ayghri/i-have-adhd --ref main
+codex plugin marketplace add isatimur/i-have-adhd --ref main
 codex plugin add i-have-adhd@i-have-adhd
 ```
 
@@ -31,19 +31,19 @@ In Codex, type `$i-have-adhd` to request the output style explicitly.
 Project (this workspace):
 
 ```bash
-npx skills add ayghri/i-have-adhd
+npx skills add isatimur/i-have-adhd
 ```
 
 Global (all Cursor projects):
 
 ```bash
-npx skills add ayghri/i-have-adhd -g
+npx skills add isatimur/i-have-adhd -g
 ```
 
 Cursor-only (skip other agents):
 
 ```bash
-npx skills add ayghri/i-have-adhd -a cursor -y
+npx skills add isatimur/i-have-adhd -a cursor -y
 ```
 
 Open a new Cursor Agent chat, type `/i-have-adhd`.
@@ -56,7 +56,9 @@ mkdir -p ~/.cursor/skills
 cp -R /path/to/i-have-adhd/skills/i-have-adhd ~/.cursor/skills/
 ```
 
-Replace `/path/to/i-have-adhd` with a local clone (`git clone https://github.com/ayghri/i-have-adhd`).
+Replace `/path/to/i-have-adhd` with a local clone (`git clone https://github.com/isatimur/i-have-adhd`).
+To install a language variant instead of the English original, copy `skills/i-have-adhd-<lang>`
+(e.g. `skills/i-have-adhd-ru`) rather than `skills/i-have-adhd`.
 
 Project-only without the CLI:
 
@@ -171,7 +173,7 @@ Add the same text to **Cursor Settings → Rules → User Rules** (applies acros
 
 **`/i-have-adhd` not in autocomplete.** Restart Claude Code. The plugin index is read at startup.
 
-**`claude plugin marketplace add` fails.** Use the `owner/repo` form: `claude plugin marketplace add ayghri/i-have-adhd`. If you point it at a local path instead, it must be the repo root (the directory containing `.claude-plugin/marketplace.json`), not `.claude-plugin/` itself.
+**`claude plugin marketplace add` fails.** Use the `owner/repo` form: `claude plugin marketplace add isatimur/i-have-adhd`. If you point it at a local path instead, it must be the repo root (the directory containing `.claude-plugin/marketplace.json`), not `.claude-plugin/` itself.
 
 **Skill activates but model still preambles.** Open a new session. Old context may carry. If it still drifts, tighten the rule wording in `skills/i-have-adhd/SKILL.md`, then re-invoke.
 

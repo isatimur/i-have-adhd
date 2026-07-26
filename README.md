@@ -10,8 +10,8 @@
 
 ## Languages
 
-This fork adds translated, independently-installable skill variants. Each is a full
-skill (frontmatter + rules), not just a translated doc — install the one matching
+This fork adds translated, independently-invokable skill variants. Each is a full
+skill (frontmatter + rules), not just a translated doc — invoke the one matching
 your language.
 
 | Language | Skill |
@@ -41,7 +41,7 @@ no separate per-language install step exists.
 <summary><strong>Claude Code</strong></summary>
 
 ```bash
-claude plugin marketplace add ayghri/i-have-adhd
+claude plugin marketplace add isatimur/i-have-adhd
 claude plugin install i-have-adhd@i-have-adhd
 ```
 
@@ -53,7 +53,7 @@ Then type `/i-have-adhd`. No local clone needed — Claude Code fetches the repo
 <summary><strong>Codex</strong></summary>
 
 ```bash
-codex plugin marketplace add ayghri/i-have-adhd --ref main
+codex plugin marketplace add isatimur/i-have-adhd --ref main
 codex plugin add i-have-adhd@i-have-adhd
 ```
 
