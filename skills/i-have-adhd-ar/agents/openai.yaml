@@ -1,0 +1,7 @@
+interface:
+  display_name: "لديّ ADHD"
+  short_description: "مخرجات منخفضة الاحتكاك لقرّاء ADHD"
+  default_prompt: "استخدم $i-have-adhd-ar لجعل هذا الرد سهل البدء والتصفح والتنفيذ."
+
+policy:
+  allow_implicit_invocation: true
