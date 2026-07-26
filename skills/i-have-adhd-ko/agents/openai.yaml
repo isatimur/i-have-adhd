@@ -1,7 +1,7 @@
 interface:
   display_name: "저는 ADHD가 있습니다"
   short_description: "ADHD 독자를 위한 저마찰 출력"
-  default_prompt: "$i-have-adhd-ko를 사용하여 이 응답을 시작하기 쉽고, 훑어보기 쉽고, 실행하기 쉽게 만드십시오."
+  default_prompt: "$i-have-adhd-ko 를 사용하여 이 응답을 시작하기 쉽고, 훑어보기 쉽고, 실행하기 쉽게 만드십시오."
 
 policy:
   allow_implicit_invocation: true
