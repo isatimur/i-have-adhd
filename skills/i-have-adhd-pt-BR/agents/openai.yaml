@@ -1,0 +1,7 @@
+interface:
+  display_name: "Tenho TDAH"
+  short_description: "Saída de baixo atrito para leitores com TDAH"
+  default_prompt: "Use $i-have-adhd-pt-BR para tornar esta resposta fácil de começar, escanear e executar."
+
+policy:
+  allow_implicit_invocation: true
